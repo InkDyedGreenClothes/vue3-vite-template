@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: YouSheBiaoTiHei;
+}
+li {
+  list-style: none;
+}
+
+// vant
+/* 添加这段样式后，Primary Button 会变成红色 */
+:root {
+  --van-button-primary-background-color: red;
+}
+
+.van-nav-bar__content {
+  // background: #00a3a3;
+}
+
+.van-nav-bar__title, .van-nav-bar__left i {
+  // color: #fff !important;
+}
+.anchorBL {
+  display: none !important;
+}

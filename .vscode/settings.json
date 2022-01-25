@@ -1,0 +1,188 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.associations.fileDefault.file_light": null,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.associations": {
+    "*.vue": "vue"
+  },
+  "explorer.confirmDelete": false,
+  "terminal.integrated.automationShell.osx": "",
+  // tab 大小为2个空格
+  "editor.tabSize": 2,
+  "eslint.autoFixOnSave": true,
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".vue"
+    ]
+  },
+  "eslint.validate": [
+    "javascript",
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    "html",
+    "vue"
+  ],
+  // // 保存时格式化
+  "editor.formatOnSave": true,
+  // // 开启 vscode 文件路径导航
+  "breadcrumbs.enabled": true,
+  //  显示 markdown 中英文切换时产生的特殊字符
+  "editor.renderControlCharacters": true,
+  // eslint 检测文件类型
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "auto"
+    },
+    "prettyhtml": {
+      "printWidth": 200,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    },
+    "prettier": {
+      "semi": false,
+      "singleQuote": true
+    }
+  },
+  "extensions.confirmedUriHandlerExtensionIds": [],
+  "fileheader.configObj": {
+    "createFileTime": true,
+    "language": {
+      "languagetest": {
+        "head": "/$$",
+        "middle": " $ @",
+        "end": " $/"
+      }
+    },
+    "autoAdd": true,
+    "autoAddLine": 100,
+    "autoAlready": true,
+    "annotationStr": {
+      "head": "/*",
+      "middle": " * @",
+      "end": " */",
+      "use": false
+    },
+    "headInsertLine": {
+      "php": 2,
+      "sh": 2
+    },
+    "beforeAnnotation": {
+      "文件后缀": "该文件后缀的头部注释之前添加某些内容"
+    },
+    "afterAnnotation": {
+      "文件后缀": "该文件后缀的头部注释之后添加某些内容"
+    },
+    "specialOptions": {
+      "特殊字段": "自定义比如LastEditTime/LastEditors"
+    },
+    "switch": {
+      "newlineAddAnnotation": true
+    },
+    "supportAutoLanguage": [],
+    "prohibitAutoAdd": [
+      "json"
+    ],
+    "folderBlacklist": [
+      "node_modules",
+      "文件夹禁止自动添加头部注释"
+    ],
+    "prohibitItemAutoAdd": [
+      "项目的全称, 整个项目禁止自动添加头部注释, 可以使用快捷键添加"
+    ],
+    "moveCursor": true,
+    "dateFormat": "YYYY-MM-DD HH:mm:ss",
+    "atSymbol": [
+      "@",
+      "@"
+    ],
+    "atSymbolObj": {
+      "文件后缀": [
+        "头部注释@符号",
+        "函数注释@符号"
+      ]
+    },
+    "colon": [
+      ": ",
+      ": "
+    ],
+    "colonObj": {
+      "文件后缀": [
+        "头部注释冒号",
+        "函数注释冒号"
+      ]
+    },
+    "filePathColon": "路径分隔符替换",
+    "showErrorMessage": false,
+    "writeLog": false,
+    "wideSame": false,
+    "wideNum": 13,
+    "functionWideNum": 0,
+    "CheckFileChange": false,
+    "createHeader": true,
+    "useWorker": false,
+    "designAddHead": false,
+    "headDesignName": "random",
+    "headDesign": false,
+    "cursorModeInternal": false,
+    "openFunctionParamsCheck": true
+  },
+  // 在使用搜索功能时，将这些文件夹/文件排除在外
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/target": true,
+    "**/logs": true,
+  },
+  // 这些文件将不会显示在工作空间中
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.js": {
+      "when": "$(basename).ts" //ts编译后生成的js文件将不会显示在工作空中
+    },
+    "**/node_modules": true
+  },
+  // 文件头部注释
+  "fileheader.customMade": {
+    "Descripttion": "",
+    "version": "1.0.0",
+    "Author": "",
+    "Date": "Do not edit", // 不需要设置，按下快捷键后自动生成
+    "LastEditors": "",
+    "LastEditTime": "Do not Edit" // 不需要设置，按下快捷键后自动生成
+  },
+  //函数注释
+  "fileheader.cursorMode": {
+    "msg": "",
+  },
+  "json.schemas": [],
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.enablePreview": false,
+  "window.zoomLevel": 0,
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "switch:command"
+  ],
+  "vsicons.dontShowNewVersionMessage": true,
+  "leetcode.endpoint": "leetcode-cn",
+  "leetcode.workspaceFolder": "/Users/admin/.leetcode",
+  "leetcode.defaultLanguage": "javascript",
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.commentDescription": false,
+  "leetcode.hint.commandShortcut": false,
+  "cSpell.language": "en,en-US",
+  "cSpell.enableFiletypes": [
+    "vue",
+    "vue-sugarss"
+  ],
+}
