@@ -19,6 +19,7 @@ module.exports = {
     requireConfigFile: false
   },
   rules: {
+    // v-model:xxx-xxx-xxx 解决这个问题;
     'no-param-reassign': 0,
     'max-len': [
       2,
