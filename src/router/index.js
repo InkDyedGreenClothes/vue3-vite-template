@@ -2,20 +2,13 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import { getToken } from "utils";
 {{{ importInfo }}}
 
-const Index = () =>
-  import(/* webpackChunkName: "group-login" */ "pages/index/index.vue");
-const Login = () =>
-  import(/* webpackChunkName: "group-login" */ "pages/login/index.vue");
-const routes = [
-  { path: "/", redirect: "/index" },
-  { path: "/index", name: "Index", component: Index },
-  { path: "/login", name: "Login", component: Login },
-];
+import routes from '@/pages/export.js'
+
 
 const router = createRouter({
   history: createWebHashHistory(), // hash模式：createWebHashHistory，history模式：createWebHistory
-  routes,
-});
+  routes
+})
 
 const whiteList = ["/login", "/trajectory", "/"];
 router.beforeEach((to, form, next) => {

@@ -19,7 +19,10 @@ module.exports = {
     requireConfigFile: false
   },
   rules: {
-    // v-model:xxx-xxx-xxx 解决这个问题;
+    // This rule checks whether template contains single root element valid for Vue 2.
+    'vue/no-multiple-template-root': 0,
+    // v-model:main-active-index  解决这个问题
+    'vue/no-v-model-argument': 'off',
     'no-param-reassign': 0,
     'max-len': [
       2,

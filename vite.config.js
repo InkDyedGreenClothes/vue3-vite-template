@@ -9,6 +9,8 @@ const resolve = function (dir) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // 静态资源基础路径 base: './' || '',
+  base: process.env.NODE_ENV === 'production' ? './' : '/',
   plugins: [
     vue(),
     legacy({
@@ -43,6 +45,6 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: "blog"
+    outDir: "dist"
   }
 });
