@@ -7,7 +7,8 @@ for (const key in modulesFiles) {
 }
 Object.keys(modules).forEach((item) => {
   modules[item]['namespaced'] = true
-  let name = item.replace(/^\.\/(.*)\.\w+$/, '$1') // 正则匹配出组件名
+  // 正则匹配出组件名 并且去除最后一个 index
+  let name = item.replace(/^\.\/(.*)\.\w+$/, '$1').replace(/\/index$/, '')
   let lastInd = item.lastIndexOf('/')
   let lastName = item.substr(lastInd + 1, item.length)
   // 判断是否为模块首页
